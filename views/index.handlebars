@@ -1,0 +1,29 @@
+<div class="container flex">
+  <div class="flex all-burgers">
+
+    <div class="not-devoured">
+      {{#each burgers}}
+      {{#unless devoured}}
+      <div class="box not-devoured-box flex">
+        <p>{{burger_name}}</p>
+        <button class="devour" value={{id}}>Devour</button>
+      </div>
+      {{/unless}}
+      {{/each}}
+    </div>
+
+    <div class="devoured">
+      {{#each burgers}}
+      {{#if devoured}}
+      <div class="box devoured-box">
+        <p>{{burger_name}}</p>
+      </div>
+      {{/if}}
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="bottom-form">
+    {{>form}}
+  </div>
+</div>

@@ -1,0 +1,62 @@
+.flex {
+  display: flex;
+}
+
+.container {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 10%;
+}
+
+.all-burgers {
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+.bottom-form {
+  width: 100%;
+}
+
+.devoured,
+.not-devoured{
+  width: 50%;
+}
+
+.box {
+  border: 1px solid black;
+  margin: .3rem auto;
+  max-width: 60%;
+}
+
+.box,
+.form {
+  padding: 1rem;
+}
+
+.not-devoured-box{
+  align-items: center;
+  justify-content: space-between;
+}
+
+.devoured-box{
+  background-color: rgba(0,0,0, 0.6);
+}
+
+.form {
+  border: 1px solid red;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.form-center {
+  flex-direction: column;
+  align-items: center;
+}
+
+.burger-input{
+  margin: .3rem 0;
+}
+
