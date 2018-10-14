@@ -1,5 +1,4 @@
 const express = require('express');
-const burgerAction = require('../models/burger');
 const orm = require('../config/orm');
 
 const router = express.Router();
